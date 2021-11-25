@@ -1,0 +1,383 @@
+/* DEVELOPER: SHERWIN DEWAN, IS117-001, FALL 2021 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #ededeb; /*beige*/
+}
+
+body {
+    font-family: "Calibri Light", sans-serif;
+    margin: auto;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+header {
+    font-family: "monospace", "Courier New", sans-serif;
+    background-color: #BEB8B3;  /* dirty blonde */
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: #312D29;
+    font-size: 20px;
+}
+
+main {
+    width: auto;
+}
+
+/* nav bar */
+
+#nav_menu ul {    /* the whole nav bar */
+    list-style-type: none;
+    position: relative;
+    background-color: #312D29; /*dark brown*/
+}
+
+#nav_menu ul li {
+    float: left;
+
+}
+
+#nav_menu ul li a { /* the menus styles */
+    display: block;
+    color: #ededeb;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+#nav_menu ul li a:hover {
+    background-color: #BEB8B3;
+    color: #312D29;
+}
+
+#nav_menu a.current {
+    color: #ededeb;
+}
+
+#nav_menu a.current:hover {
+    background-color: #BEB8B3;
+    color: #312D29;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+/* dropdown for gallery */
+
+#nav_menu ul li:hover > ul {
+    display: block;
+    background-color: #312D29;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.gallerymenu > li {
+    position: relative;
+    background: #999999;
+}
+
+/* Home */
+
+.container3 {
+    position: relative;
+    height: 50%;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+.polaroid2 {
+    width: 60%;
+    padding: 20px 20px;
+    font-size: 25px;
+    float: left;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.container2 {
+    text-align: center;
+    padding: 1px;
+}
+
+.button2 {
+    background-color: #BEB8B3;
+    color: #312D29;
+    padding: 10px 100px;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: auto;
+    width: 40%;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background-color: #312D29;
+    color: #BEB8B3;
+    text-decoration: none;
+}
+
+/* images pages within b&w AND color */
+
+.polaroid {
+    width: 60%;
+    padding: 20px 20px;
+    font-size: 25px;
+    margin: auto;
+    float: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.polaroid img {
+    width: 60%;
+    height: auto;
+}
+
+.container1 {
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+/* b&w and color */
+
+.sa { /* the categories */
+    display: inline-block;
+    margin: 20px;
+    font-size: 40px;
+    width: 50%;
+    padding: 60px 60px;
+    height: 200px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.sa:hover {
+    background-color: black;
+    color: #BEB8B3;
+    text-decoration: none;
+}
+
+.sa-bandw {
+    background-color: #010036;
+    color: white;
+}
+
+.sa-color {
+    background-color:#360024;
+    color: white;
+}
+
+/* exp and skills */
+
+.card-deck{
+    display: inline-block;
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.card{
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    border-color: #ffffff
+}
+
+.card-keyskills ul li {
+    list-style-type: none;
+    border-color: #BEB8B3;
+}
+
+.card-companies ul li {
+    list-style-type: none;
+    border-color: #BEB8B3;
+}
+
+.card-languages ul li {
+    list-style-type: none;
+    border-color: #BEB8B3;
+}
+
+.button {
+    background-color: #BEB8B3;
+    color: #312D29;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #312D29;
+    color: #BEB8B3;
+    text-decoration: none;
+}
+
+/* About Me */
+}
+
+.card1-deck1{
+    display: inline-block;
+    width: 30%;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.card1{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 23px;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    border-color: #ffffff
+}
+.card1-aboutmepic {
+    float:right;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+
+/* Contact Me */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 5px solid #E9E8E8;
+    margin-bottom: 20px;
+    resize: vertical;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+/*the container of the body*/
+.container {
+    border-radius: 10px;
+    background-color: #BEB8B3;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #312D29;
+    color: #BEB8B3;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    border-radius: 7px;
+}
+
+input[type=submit]:hover {
+    background-color: #BEB8B3;
+    color: #312D29;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: auto;
+}
+
+.column {
+    display: inline-block;
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.column2 {
+    display: inline-block;
+    width: 50%;
+    margin-top: -27px;
+    margin-bottom: 25px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* footer for all */
+
+footer {
+    background-color: #BEB8B3;
+    position: inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    overflow: hidden;
+    clear: both;
+}
+
+footer p {
+    width: auto;
+    font-size: 15px;
+    text-align: left;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #312D29 !important;
+    }
+}

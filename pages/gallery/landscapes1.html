@@ -1,0 +1,85 @@
+<!-- DEVELOPER: SHERWIN DEWAN, IS117-001, FALL 2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amader Kobita</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../styles/normalize1.css">
+    <link rel="stylesheet" href="../../styles/main1.css">
+    <link rel="stylesheet" href="../../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>Amader Kobita.</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href= "../../index1.html" class="current">Home</a></li>
+        <li class="gallerymenu"data-toggle="dropdown"> <a href="#">Gallery<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="../color.html">Color</a></li>
+                <li><a href="../black&white.html">B&W</a></li>
+            </ul>
+        <li><a href="../expandskills.html">Experience & Skills</a></li>
+        <li><a href="../aboutme.html">About Me</a></li>
+        <li><a href="../contactme.html">Contact Me</a></li>
+        </li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h3><b>B&W / Landscapes</b></h3>
+
+        <div class="polaroid">
+            <img src="/images/landscape_beach.jpg" alt="Beach" style="width:100%">
+            <div class="container1">
+                <p>Ariba Aruba</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="/images/landscape_nyc.jpg" alt="nyc" style="width:100%">
+            <div class="container1">
+                <p>A River Away</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="/images/landscape_palmtree.jpg" alt="palm trees" style="width:100%">
+            <div class="container1">
+                <p>Cali Nights</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="/images/landscape_seekinghope.jpg" alt="seeking hope" style="width:100%">
+            <div class="container1">
+                <p>Seeking Hope</p>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2021, Sherwin Dewan. | Terms of Use | Privacy Statement</p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</footer>
+</body>
+</html>
